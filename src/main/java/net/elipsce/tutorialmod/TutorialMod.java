@@ -1,8 +1,10 @@
 package net.elipsce.tutorialmod;
 
 import net.elipsce.tutorialmod.block.ModBlocks;
+import net.elipsce.tutorialmod.block.entity.ModBlockEntities;
 import net.elipsce.tutorialmod.item.ModItemGroups;
 import net.elipsce.tutorialmod.item.ModItems;
+import net.elipsce.tutorialmod.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 	}
 }
